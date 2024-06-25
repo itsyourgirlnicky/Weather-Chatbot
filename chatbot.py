@@ -17,7 +17,7 @@ def chatbot_response(user_input):
     return "Sorry please try again."
 
 if __name__ == "__main__":
-    print("Hello! I am a weather chatbot. What information do you need?")
+    print("Hello! I am a weather chatbot. What city's weather information do you need?")
     while True:
         user_input = input("You: ")
         if user_input.lower() in ['exit']:
