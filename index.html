@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Chatbot</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="startFunction()">
+    <nav>
+        <div class="navbar">
+            <img class="dpimg" src="images/icon2.jfif" alt="">
+            <div class="topUpdate">
+                <label id="name">WEATHER FORECASTER</label>
+                <label id="lastseen">last seen today at 5:02 am</label>
+            </div>
+        </div>
+    </nav>
+
+    <div class="scrollable" id="myScrollable">
+        <div id="chatting" class="chatting">
+            <ul id="listUL">
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="sendBar">
+            <input id="inputMSG" onkeypress="isEnter(event)" type="text" placeholder="Type a message" autofocus>
+            <svg onclick="sendMsg()" viewBox="0 0 24 24" width="24" height="24" class="sender">
+                <path fill="currentColor"
+                    d="M1.101 21.757 23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"></path>
+            </svg>
+        </div>
+    </footer>
+
+</body>
+</html>
